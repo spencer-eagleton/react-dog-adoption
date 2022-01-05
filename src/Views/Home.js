@@ -9,6 +9,12 @@ export default function Home() {
     };
     fetchData();
   }, []);
-  console.log(dogs);
-  return <h1>Dog List</h1>;
+
+  return (
+    <div className="dog-list">
+      {dogs.map((dog) => {
+        return <h1 key={dog.id}>{dog.name}</h1>;
+      })}
+    </div>
+  );
 }
