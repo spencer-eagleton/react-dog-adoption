@@ -12,9 +12,16 @@ export default function Home() {
 
   return (
     <div className="dog-list">
-      {dogs.map((dog) => {
-        return <h1 key={dog.id}>{dog.name}</h1>;
-      })}
+      <div className="dog-card">
+        {dogs.map((dog) => {
+          return (
+            <>
+              <h1 key={dog.id}>{dog.name}</h1>
+              <img src="http://placedog.net/500?id=" />
+            </>
+          );
+        })}
+      </div>
     </div>
   );
 }
