@@ -6,7 +6,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header>
-          <h1>Puppers 4-U</h1>
+          <h1>Puppers 4U</h1>
           <NavLink to="/" exact>
             Home
           </NavLink>
