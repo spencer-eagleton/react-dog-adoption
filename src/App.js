@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
-
+import Home from './Views/Home';
 function App() {
   return (
     <BrowserRouter>
@@ -12,7 +12,10 @@ function App() {
           </NavLink>
         </header>
         <Switch>
-          <Route path="/" exact />
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/:id" exact />
         </Switch>
       </div>
     </BrowserRouter>
