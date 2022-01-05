@@ -1,11 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Puppers 4-U</h1>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <header>
+          <h1>Puppers 4-U</h1>
+          <NavLink to="/" exact>
+            Home
+          </NavLink>
+        </header>
+        <Switch>
+          <Route path="/" exact />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
