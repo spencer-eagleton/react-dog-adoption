@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
 import Home from './Views/Home';
+import DogDetail from './Views/DogDetail';
 function App() {
   return (
     <BrowserRouter>
@@ -13,7 +14,7 @@ function App() {
         </header>
         <Switch>
           <Route path="/" component={Home} exact></Route>
-          <Route path="/:id" exact />
+          <Route path="/:id" component={DogDetail} exact />
         </Switch>
       </div>
     </BrowserRouter>
