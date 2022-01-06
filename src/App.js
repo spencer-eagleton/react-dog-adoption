@@ -12,9 +12,7 @@ function App() {
           </NavLink>
         </header>
         <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
+          <Route path="/" component={Home} exact></Route>
           <Route path="/:id" exact />
         </Switch>
       </div>
