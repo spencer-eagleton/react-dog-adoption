@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
 import Home from './Views/Home';
 import DogDetail from './Views/DogDetail';
+import Admin from './Views/Admin';
 function App() {
   return (
     <BrowserRouter>
@@ -11,10 +12,14 @@ function App() {
           <NavLink to="/" exact>
             Home
           </NavLink>
+          <NavLink to="/admin" exact>
+            Admin
+          </NavLink>
         </header>
         <Switch>
           <Route path="/" component={Home} exact></Route>
           <Route path="/dogs/:id" component={DogDetail} exact />
+          <Route path="/admin" component={Admin} exact />
         </Switch>
       </div>
     </BrowserRouter>
