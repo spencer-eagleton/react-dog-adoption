@@ -23,7 +23,7 @@ export default function Home() {
         <div className="dog-card">
           {dogs.map((dog) => (
             <Link key={dog.id} to={`/dogs/${dog.id}`}>
-              <Dog {...dog} />
+              <Dog dog={dog} />
             </Link>
           ))}
         </div>
