@@ -1,27 +1,27 @@
-export default function AdminForm() {
+export default function AdminForm({ name, breed, age, image, bio }) {
   return (
     <>
       <div>Add a new pupperoo</div>
       <form>
         <label>
           Name:
-          <input type="text" />
+          <input placeholder="Enter Name" type="text" value={name} />
         </label>
         <label>
           Breed:
-          <input type="text" />
+          <input placeholder="Enter Breed" type="text" value={breed} />
         </label>
         <label>
           Age:
-          <input type="text" />
+          <input placeholder="Enter Age" type="text" value={age} />
         </label>
         <label>
           Image:
-          <input type="text" />
+          <input placeholder="Image URL" type="text" value={image} />
         </label>
         <label>
           Bio:
-          <input type="text" />
+          <input placeholder="" type="text-area" value={bio} />
         </label>
         <button>Update Puppers</button>
       </form>
