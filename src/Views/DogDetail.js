@@ -9,8 +9,9 @@ export default function DogDetail(props) {
   const id = props.match.params.id;
   useEffect(() => {
     const fetchData = async () => {
-      const resp = await fetchDogById(id);
-      setDog(resp);
+      const data = await fetchDogById(id);
+      console.log(data);
+      setDog(data);
       setLoading(false);
     };
     fetchData();
@@ -19,9 +20,9 @@ export default function DogDetail(props) {
   if (loading) return <h1>loading... :3</h1>;
 
   return (
-    <>
+    <div>
       <h1>Dog Detail</h1>
       <Dog dog={dog} />
-    </>
+    </div>
   );
 }
