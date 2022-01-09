@@ -1,21 +1,25 @@
 import './App.css';
 import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
 import Home from './Views/Home';
+import DogDetail from './Views/DogDetail';
+import Admin from './Views/Admin';
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <header>
-          <h1>Puppers 4-U</h1>
+          <h1>Puppers 4U</h1>
           <NavLink to="/" exact>
             Home
           </NavLink>
+          <NavLink to="/admin" exact>
+            Admin
+          </NavLink>
         </header>
         <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/:id" exact />
+          <Route path="/" component={Home} exact></Route>
+          <Route path="/dogs/:id" component={DogDetail} exact />
+          <Route path="/admin" component={Admin} exact />
         </Switch>
       </div>
     </BrowserRouter>
