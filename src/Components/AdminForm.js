@@ -23,7 +23,7 @@ export default function AdminForm() {
           Bio:
           <input type="text" />
         </label>
-        <button>Add Pupper</button>
+        <button>Update Puppers</button>
       </form>
     </>
   );

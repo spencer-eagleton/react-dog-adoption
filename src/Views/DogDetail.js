@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchDogById } from '../services/doglist';
 import Dog from '../Components/Dog';
+import { Link } from 'react-router-dom';
 
 export default function DogDetail(props) {
   const [dog, setDog] = useState([]);
@@ -22,6 +23,7 @@ export default function DogDetail(props) {
     <div>
       <h1>Dog Detail</h1>
       <Dog dog={dog} />
+      <Link to="/dogs/:id/edit">Edit</Link>
     </div>
   );
 }
