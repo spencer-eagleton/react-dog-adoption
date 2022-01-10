@@ -23,7 +23,7 @@ export default function DogDetail(props) {
     <div>
       <h1>Dog Detail</h1>
       <Dog dog={dog} />
-      <Link to="/dogs/:id/edit">Edit</Link>
+      <Link to={`/dogs/${id}/edit`}>Edit</Link>
     </div>
   );
 }
