@@ -9,6 +9,7 @@ export default function AdminForm({
   setImage,
   bio,
   setBio,
+  handleSubmit,
 }) {
   return (
     <>
@@ -21,7 +22,7 @@ export default function AdminForm({
             type="text"
             value={name}
             onChange={(e) => {
-              setName('name', e.target.value);
+              setName(e.target.value);
             }}
           />
         </label>
@@ -32,7 +33,7 @@ export default function AdminForm({
             type="text"
             value={breed}
             onChange={(e) => {
-              setBreed('breed', e.target.value);
+              setBreed(e.target.value);
             }}
           />
         </label>
@@ -43,7 +44,7 @@ export default function AdminForm({
             type="text"
             value={age}
             onChange={(e) => {
-              setAge('age', e.target.value);
+              setAge(e.target.value);
             }}
           />
         </label>
@@ -54,7 +55,7 @@ export default function AdminForm({
             type="text"
             value={image}
             onChange={(e) => {
-              setImage('image', e.target.value);
+              setImage(e.target.value);
             }}
           />
         </label>
@@ -64,11 +65,11 @@ export default function AdminForm({
             placeholder="Enter Bio"
             value={bio}
             onChange={(e) => {
-              setBio('bio', e.target.value);
+              setBio(e.target.value);
             }}
           />
         </label>
-        <button>Update Puppers</button>
+        <button onClick={handleSubmit}>Update Puppers</button>
       </form>
     </>
   );

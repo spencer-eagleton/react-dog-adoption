@@ -1,6 +1,6 @@
 import AdminForm from '../Components/AdminForm';
 import { useState, useEffect } from 'react';
-import { fetchDogById } from '../services/doglist';
+import { fetchDogById, updateDog } from '../services/doglist';
 
 export default function Edit(props) {
   //   const [dog, setDog] = useState({});
@@ -30,6 +30,11 @@ export default function Edit(props) {
   //     setDog({ ...dog });
   //   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = await updateDog(id, name, breed, age, image, bio);
+  };
+
   return (
     <div>
       <AdminForm
@@ -43,6 +48,7 @@ export default function Edit(props) {
         setImage={setImage}
         bio={bio}
         setBio={setBio}
+        handleSubmit={handleSubmit}
       />
     </div>
   );
