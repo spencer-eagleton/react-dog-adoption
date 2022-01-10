@@ -21,9 +21,13 @@ export default function DogDetail(props) {
   }, [id]);
 
   async function handleDelete(e) {
-    e.preventDefault();
-    await deleteDog(id);
-    history.push('/');
+    try {
+      e.preventDefault();
+      await deleteDog(id);
+      history.push('/');
+    } catch {
+      alert('error. try again');
+    }
   }
 
   if (loading) return <h1>loading... :3</h1>;
