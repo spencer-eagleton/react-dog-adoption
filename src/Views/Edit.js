@@ -32,7 +32,7 @@ export default function Edit(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = await updateDog(id, name, breed, age, image, bio);
+    await updateDog(id, name, breed, age, image, bio);
   };
 
   return (
