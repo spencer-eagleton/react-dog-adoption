@@ -22,3 +22,8 @@ export async function createDog(name, breed, age, image, bio) {
     .single();
   return resp;
 }
+
+export async function deleteDog(id) {
+  const resp = await client.from('dogs').delete().eq('id', id);
+  return checkError(resp);
+}
