@@ -18,8 +18,7 @@ export async function updateDog(id, name, breed, age, image, bio) {
 export async function createDog(name, breed, age, image, bio) {
   const resp = await client
     .from('dogs')
-    .insert({ name: name, breed: breed, age: age, image: image, bio: bio })
-    .single();
+    .insert({ name: name, breed: breed, age: age, image: image, bio: bio });
   return resp;
 }
 

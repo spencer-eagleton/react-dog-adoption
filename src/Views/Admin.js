@@ -11,7 +11,7 @@ export default function Admin() {
 
   const submit = async (e) => {
     e.preventDefault();
-    await createDog({ name, breed, age, image, bio });
+    await createDog(name, breed, age, image, bio);
   };
 
   return (
