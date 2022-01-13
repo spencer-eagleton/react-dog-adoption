@@ -1,29 +1,75 @@
-export default function AdminForm() {
+export default function AdminForm({
+  name,
+  setName,
+  breed,
+  setBreed,
+  age,
+  setAge,
+  image,
+  setImage,
+  bio,
+  setBio,
+  handleSubmit,
+}) {
   return (
     <>
       <div>Add a new pupperoo</div>
       <form>
         <label>
           Name:
-          <input type="text" />
+          <input
+            placeholder="Enter Name"
+            type="text"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+          />
         </label>
         <label>
           Breed:
-          <input type="text" />
+          <input
+            placeholder="Enter Breed"
+            type="text"
+            value={breed}
+            onChange={(e) => {
+              setBreed(e.target.value);
+            }}
+          />
         </label>
         <label>
           Age:
-          <input type="text" />
+          <input
+            placeholder="Enter Age"
+            type="text"
+            value={age}
+            onChange={(e) => {
+              setAge(e.target.value);
+            }}
+          />
         </label>
         <label>
           Image:
-          <input type="text" />
+          <input
+            placeholder="Image URL"
+            type="text"
+            value={image}
+            onChange={(e) => {
+              setImage(e.target.value);
+            }}
+          />
         </label>
         <label>
           Bio:
-          <input type="text" />
+          <textarea
+            placeholder="Enter Bio"
+            value={bio}
+            onChange={(e) => {
+              setBio(e.target.value);
+            }}
+          />
         </label>
-        <button>Add Pupper</button>
+        <button onClick={handleSubmit}>Update Puppers</button>
       </form>
     </>
   );

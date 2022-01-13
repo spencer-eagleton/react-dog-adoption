@@ -3,6 +3,7 @@ import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom/cjs/reac
 import Home from './Views/Home';
 import DogDetail from './Views/DogDetail';
 import Admin from './Views/Admin';
+import Edit from './Views/Edit';
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" component={Home} exact></Route>
           <Route path="/dogs/:id" component={DogDetail} exact />
           <Route path="/admin" component={Admin} exact />
+          <Route path="/dogs/:id/edit" component={Edit} />
         </Switch>
       </div>
     </BrowserRouter>
