@@ -1,7 +1,7 @@
-import AdminForm from '../Components/AdminForm';
+import AdminForm from '../../Components/AdminForm';
 import { useState, useEffect } from 'react';
-import { fetchDogById, updateDog } from '../services/doglist';
-
+import { fetchDogById, updateDog } from '../../services/doglist';
+import { useHistory } from 'react-router-dom';
 export default function Edit(props) {
   //   const [dog, setDog] = useState({});
   const [name, setName] = useState('');
@@ -9,6 +9,8 @@ export default function Edit(props) {
   const [age, setAge] = useState('');
   const [image, setImage] = useState('');
   const [bio, setBio] = useState('');
+  const [error, setError] = useState('');
+  const history = useHistory();
 
   const id = props.match.params.id;
 
@@ -32,11 +34,20 @@ export default function Edit(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await updateDog(id, name, breed, age, image, bio);
+    try {
+      await updateDog(id, name, breed, age, image, bio);
+      setError('Dog updated!');
+      setTimeout(() => {
+        history.push(`/dogs/${id}`);
+      }, 3000);
+    } catch {
+      setError('Didnt work!');
+    }
   };
 
   return (
     <div>
+      <p>{error}</p>
       <AdminForm
         name={name}
         setName={setName}

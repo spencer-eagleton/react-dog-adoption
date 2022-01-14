@@ -41,7 +41,7 @@ export default function AdminForm({
           Age:
           <input
             placeholder="Enter Age"
-            type="text"
+            type="number"
             value={age}
             onChange={(e) => {
               setAge(e.target.value);

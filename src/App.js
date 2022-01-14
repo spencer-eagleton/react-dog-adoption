@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter, NavLink, Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
-import Home from './Views/Home';
+import Home from './Views/Home/Home';
 import DogDetail from './Views/DogDetail';
-import Admin from './Views/Admin';
-import Edit from './Views/Edit';
+import Admin from './Views/Admin/Admin';
+import Edit from './Views/Edit/Edit';
 function App() {
   return (
     <BrowserRouter>

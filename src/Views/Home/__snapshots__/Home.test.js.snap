@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checking for max dog 1`] = `
+<div>
+  <div
+    class="dog-list"
+  >
+    <div
+      class="dog-card"
+    >
+      <div>
+        <a
+          href="/dogs/5"
+        >
+          <h1>
+            Shanti
+          </h1>
+          <img
+            src="https://placedog.net/1000/563?id=87"
+          />
+          <p>
+            I am a playful, shy but loving dog who loves the water 
+          </p>
+        </a>
+        <a
+          href="/dogs/2"
+        >
+          <h1>
+            Frank
+          </h1>
+          <img
+            src="https://placedog.net/samples/158.jpg"
+          />
+          <p>
+            A friendly and calm lovebug that just wants to play with his toys.
+          </p>
+        </a>
+        <a
+          href="/dogs/6"
+        >
+          <h1>
+            Kuma
+          </h1>
+          <img
+            src="https://placedog.net/samples/174.jpg"
+          />
+          <p>
+            I am a calm, quiet and wise pupper.
+          </p>
+        </a>
+        <a
+          href="/dogs/7"
+        >
+          <h1>
+            Juni
+          </h1>
+          <img
+            src="https://placedog.net/samples/101.jpg"
+          />
+          <p>
+            I am a loyal, yet easily startled pup thats sweet but will defend myself and my owners if threatened.
+          </p>
+        </a>
+        <a
+          href="/dogs/15"
+        >
+          <h1 />
+          <img
+            src=""
+          />
+          <p />
+        </a>
+        <a
+          href="/dogs/16"
+        >
+          <h1 />
+          <img
+            src=""
+          />
+          <p />
+        </a>
+        <a
+          href="/dogs/17"
+        >
+          <h1 />
+          <img
+            src=""
+          />
+          <p />
+        </a>
+        <a
+          href="/dogs/18"
+        >
+          <h1>
+            hello
+          </h1>
+          <img
+            src="URL"
+          />
+          <p>
+            biooooo
+          </p>
+        </a>
+        <a
+          href="/dogs/4"
+        >
+          <h1>
+            Miga
+          </h1>
+          <img
+            src="https://placedog.net/samples/90.jpg"
+          />
+          <p>
+            I've been through a lot so some dogs are just not for me but I love my family and would do anything for them.
+          </p>
+        </a>
+        <a
+          href="/dogs/1"
+        >
+          <h1>
+            Max
+          </h1>
+          <img
+            src="https://placedog.net/1000/563?id=98"
+          />
+          <p>
+            A high energy pupperoo who makes a great and hardy adventure buddy. Ball is life.
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

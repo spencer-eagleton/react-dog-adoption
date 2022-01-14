@@ -21,8 +21,9 @@ export default function DogDetail(props) {
   }, [id]);
 
   async function handleDelete(e) {
+    e.preventDefault();
+
     try {
-      e.preventDefault();
       await deleteDog(id);
       history.push('/');
     } catch {
