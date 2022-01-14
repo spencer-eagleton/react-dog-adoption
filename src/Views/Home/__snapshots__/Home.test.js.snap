@@ -10,17 +10,13 @@ exports[`checking for max dog 1`] = `
     >
       <div>
         <a
-          href="/dogs/5"
+          href="/dogs/22"
         >
-          <h1>
-            Shanti
-          </h1>
+          <h1 />
           <img
-            src="https://placedog.net/1000/563?id=87"
+            src=""
           />
-          <p>
-            I am a playful, shy but loving dog who loves the water 
-          </p>
+          <p />
         </a>
         <a
           href="/dogs/2"
@@ -89,19 +85,6 @@ exports[`checking for max dog 1`] = `
           <p />
         </a>
         <a
-          href="/dogs/18"
-        >
-          <h1>
-            hello
-          </h1>
-          <img
-            src="URL"
-          />
-          <p>
-            biooooo
-          </p>
-        </a>
-        <a
           href="/dogs/4"
         >
           <h1>
@@ -125,6 +108,45 @@ exports[`checking for max dog 1`] = `
           />
           <p>
             A high energy pupperoo who makes a great and hardy adventure buddy. Ball is life.
+          </p>
+        </a>
+        <a
+          href="/dogs/5"
+        >
+          <h1>
+            Shanti
+          </h1>
+          <img
+            src="https://placedog.net/1000/563?id=87"
+          />
+          <p>
+            I am a playful, shy but loving dog who loves the water 
+          </p>
+        </a>
+        <a
+          href="/dogs/19"
+        >
+          <h1>
+            Koba
+          </h1>
+          <img
+            src="https://img.search.brave.com/b_Z4VQYeIX8EsDbzeAzHNYFIbKSc20KcBJt1JWIGvgk/fit/958/503/ce/1/aHR0cDovLzQuYnAu/YmxvZ3Nwb3QuY29t/Ly0wQkhiaGhYdmlL/Yy9VaUJ5bkxwbFFv/SS9BQUFBQUFBQVhk/ay85ZGNUWE5RZDNk/MC93MTIwMC1oNjMw/LXAtay1uby1udS9Q/aXRidWxsK0RvZytX/YWxscGFwZXJzMS5q/cGc"
+          />
+          <p>
+            Energetic sweet and very playful
+          </p>
+        </a>
+        <a
+          href="/dogs/21"
+        >
+          <h1>
+            Koba
+          </h1>
+          <img
+            src="https://img.search.brave.com/b_Z4VQYeIX8EsDbzeAzHNYFIbKSc20KcBJt1JWIGvgk/fit/958/503/ce/1/aHR0cDovLzQuYnAu/YmxvZ3Nwb3QuY29t/Ly0wQkhiaGhYdmlL/Yy9VaUJ5bkxwbFFv/SS9BQUFBQUFBQVhk/ay85ZGNUWE5RZDNk/MC93MTIwMC1oNjMw/LXAtay1uby1udS9Q/aXRidWxsK0RvZytX/YWxscGFwZXJzMS5q/cGc"
+          />
+          <p>
+            pupperoo
           </p>
         </a>
       </div>
