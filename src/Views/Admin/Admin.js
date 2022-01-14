@@ -1,6 +1,6 @@
-import AdminForm from '../Components/AdminForm';
+import AdminForm from '../../Components/AdminForm';
 import { useState } from 'react';
-import { createDog } from '../services/doglist';
+import { createDog } from '../../services/doglist';
 
 export default function Admin() {
   const [name, setName] = useState('');

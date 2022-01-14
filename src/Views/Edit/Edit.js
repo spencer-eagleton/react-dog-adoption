@@ -1,6 +1,6 @@
-import AdminForm from '../Components/AdminForm';
+import AdminForm from '../../Components/AdminForm';
 import { useState, useEffect } from 'react';
-import { fetchDogById, updateDog } from '../services/doglist';
+import { fetchDogById, updateDog } from '../../services/doglist';
 import { useHistory } from 'react-router-dom';
 export default function Edit(props) {
   //   const [dog, setDog] = useState({});

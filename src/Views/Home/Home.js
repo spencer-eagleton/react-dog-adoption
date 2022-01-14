@@ -1,8 +1,8 @@
-import { fetchDogs } from '../services/doglist';
+import { fetchDogs } from '../../services/doglist';
 import { useState, useEffect } from 'react';
 // import { Link } from 'react-router-dom';
 // import Dog from '../Components/Dog';
-import DogList from './DogList';
+import DogList from '../DogList';
 
 export default function Home() {
   const [dogs, setDogs] = useState([]);

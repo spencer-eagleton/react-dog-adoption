@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checking for admin component 1`] = `
+<div>
+  <div>
+    Add a new pupperoo
+  </div>
+  <form>
+    <label>
+      Name:
+      <input
+        placeholder="Enter Name"
+        type="text"
+        value=""
+      />
+    </label>
+    <label>
+      Breed:
+      <input
+        placeholder="Enter Breed"
+        type="text"
+        value=""
+      />
+    </label>
+    <label>
+      Age:
+      <input
+        placeholder="Enter Age"
+        type="number"
+        value=""
+      />
+    </label>
+    <label>
+      Image:
+      <input
+        placeholder="Image URL"
+        type="text"
+        value=""
+      />
+    </label>
+    <label>
+      Bio:
+      <textarea
+        placeholder="Enter Bio"
+      />
+    </label>
+    <button>
+      Update Puppers
+    </button>
+  </form>
+</div>
+`;
