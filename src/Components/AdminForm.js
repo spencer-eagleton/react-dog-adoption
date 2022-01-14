@@ -10,6 +10,7 @@ export default function AdminForm({
   bio,
   setBio,
   handleSubmit,
+  errors,
 }) {
   return (
     <>
@@ -26,6 +27,7 @@ export default function AdminForm({
             }}
           />
         </label>
+        <p>{errors.name}</p>
         <label>
           Breed:
           <input
