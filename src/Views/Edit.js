@@ -9,6 +9,7 @@ export default function Edit(props) {
   const [age, setAge] = useState('');
   const [image, setImage] = useState('');
   const [bio, setBio] = useState('');
+  const [error, setError] = useState('');
 
   const id = props.match.params.id;
 
@@ -32,11 +33,17 @@ export default function Edit(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await updateDog(id, name, breed, age, image, bio);
+    try {
+      await updateDog(id, name, breed, age, image, bio);
+      setError('Dog updated!');
+    } catch {
+      setError('Didnt work!');
+    }
   };
 
   return (
     <div>
+      <p>{error}</p>
       <AdminForm
         name={name}
         setName={setName}

@@ -8,20 +8,15 @@ export default function Admin() {
   const [age, setAge] = useState('');
   const [image, setImage] = useState('');
   const [bio, setBio] = useState('');
-  const [errors, setErrors] = useState({ name: '', bio: '' });
 
   const submit = async (e) => {
     e.preventDefault();
-    if (name.length === 0) {
-      setErrors((prevValue) => ({ ...prevValue, name: 'Enter a name to continue' }));
-    } else {
-      await createDog(name, breed, age, image, bio);
-    }
+
+    await createDog(name, breed, age, image, bio);
   };
 
   return (
     <AdminForm
-      errors={errors}
       name={name}
       setName={setName}
       breed={breed}
