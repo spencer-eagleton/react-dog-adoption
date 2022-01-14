@@ -14,12 +14,15 @@ export default function Admin() {
 
   const submit = async (e) => {
     e.preventDefault();
-
-    await createDog(name, breed, age, image, bio);
-    setUpdatePrompt('Doggo added!');
-    setTimeout(() => {
-      history.push('/');
-    }, 3000);
+    try {
+      await createDog(name, breed, age, image, bio);
+      setUpdatePrompt('Doggo added!');
+      setTimeout(() => {
+        history.push('/');
+      }, 3000);
+    } catch (e) {
+      setUpdatePrompt("couldn't add doggo");
+    }
   };
 
   return (
