@@ -10,6 +10,15 @@ exports[`checking for max dog 1`] = `
     >
       <div>
         <a
+          href="/dogs/22"
+        >
+          <h1 />
+          <img
+            src=""
+          />
+          <p />
+        </a>
+        <a
           href="/dogs/2"
         >
           <h1>
